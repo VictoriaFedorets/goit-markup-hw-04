@@ -148,6 +148,10 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.links {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .address-link:hover,
 .address-link:focus {
   color: #404bbf;
@@ -318,7 +322,6 @@ address {
 
 .social-media {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 24px;
   width: 232px;
@@ -329,17 +332,27 @@ address {
 .social-link {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background-color: #4d5ae5;
-  padding: 12px;
+
+  /* padding: 12px; */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icons {
-  fill: #ffffff;
+.social-icon {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.social-link:hover {
+.icons {
+  fill: #f4f4fd;
+}
+
+.social-icon:hover,
+.social-icon:focus {
   background-color: #404bbf;
 }
 
@@ -492,6 +505,7 @@ address {
   fill: #f4f4fd;
 }
 
-.social-icon-footer:hover {
+.social-icon-footer:hover,
+.social-icon-footer:focus {
   background-color: #31d0aa;
 }
